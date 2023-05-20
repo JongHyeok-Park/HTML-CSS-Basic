@@ -1,0 +1,21 @@
+body {
+    background-color: #f7f9fc;
+}
+
+.btn {
+    background-color: #6fbaf8;
+    color: white;
+}
+
+.profile {
+    background-color: white;
+}
+
+.blue {
+    color: #6fbaf8;
+}
+
+.no-margin * {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

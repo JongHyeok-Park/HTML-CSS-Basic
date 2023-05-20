@@ -1,0 +1,80 @@
+div {
+    box-sizing: border-box;
+}
+
+td,
+th {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.wrap {
+    background-color: wheat;
+}
+
+.cart {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+}
+
+.cart-table {
+    width: 100%;
+
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-table td,
+.cart-table th {
+    padding: 10px 15px;
+    border-bottom: 1px solid wheat;
+}
+
+.cart-table th:nth-child(2) {
+    width: 200px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: gold;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: goldenrod;
+    transition-duration: 0.3s;
+}
+
+.btn:focus {
+    background-color: grey;
+}
+
+.btn:active {
+    background-color: brown;
+}
+
+.custom-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-link:link {
+    color: black;
+}
+
+.custom-link:visited {
+    color: red;
+}
