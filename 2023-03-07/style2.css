@@ -222,16 +222,13 @@ textarea {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .mybox::after {
-    content: "";
+    content: " ";
     display: block;
     clear: both;
     float: none;
 }
 
-=======
->>>>>>> 43d818d (first commit)
 .mybox-inner {
     float: left;
     width: 25%;
@@ -290,7 +287,6 @@ textarea {
     transition: all 0.8s;
 }
 
-<<<<<<< HEAD
 .pseudo::before {
     content: '안녕';
     color: red;
@@ -319,12 +315,107 @@ progress::-webkit-progress-value {
 :: 는 Pseudo-element (내부의 일부분만 스타일을 줌)
 */
 
-=======
->>>>>>> 43d818d (first commit)
 .overlay:hover .overlay-black {
     margin-top: 50%;
     height: 50%;
     bottom: 0%;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0px);
+    }
+
+    33% {
+        transform: translateX(-20px);
+    }
+
+    66% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes buttonShake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes plus {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(1.4);
+    }
+}
+
+.ani-container {
+    text-align: center;
+}
+
+.ani-text {
+    text-align: center;
+}
+
+.ani-text:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+.ani-button {
+    font-size: 20px;
+    padding: 15px;
+    background: skyblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.ani-button:hover {
+    animation-name: buttonShake;
+    animation-duration: 0.5s;
+}
+
+.ani-plus {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 70px;
+    width: 84px;
+    height: 84px;
+    line-height: 84px;
+    cursor: pointer;
+}
+
+.ani-plus:hover {
+    animation-name: plus;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 1200px) {
