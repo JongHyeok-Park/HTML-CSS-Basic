@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* margin: 0; */
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+}
+
+.title {
+    color: gold;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    background: rgba(152, 252, 255, 0.774);
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    box-shadow: 3px 3px black;
+}
+
+.container {
+    width: 800px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.left {
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: block;
+    margin: auto;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+    float: left;
+    display: block;
+    margin: auto;
+}
+
+.user {
+    width: 90%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.content {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    display: block;
+}
+
+.name {
+    margin: 10px;
+    float: left;
+}
+
+.name-image {
+    display: block;
+    float: left;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.navbar li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.content h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+body {
+    background-color: #f7f9fc;
+}
+
+.profile {
+    background-color: white;
+}
+
+.blue {
+    color: #6fbaf8;
+}
+
+.no-margin * {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

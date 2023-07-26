@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+$main-color: brown;
+
+@mixin font-style($size, $space, $type) {
+    font-size: $size;
+    letter-spacing: $space;
+    #{ $type }: 100px;
+}

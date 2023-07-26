@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+
+    <meta charset=" UTF-8" />
+    <!-- 사이트 설명 넣는거임 SEO할 때 필수 -->
+    <meta name="description" content="종혁이의 연습실">
+    <!-- 키워드 넣는거임 -->
+    <meta name="keywords" content="HTML, CSS, Javascript, js, 자바스크립트, 홈페이지, 웹사이트, 웹페이지, 사이트">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 반응형 할 때 화면 크기 잡아주는거 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 사이트 이름 -->
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="ie.css" />
+    <![endif]-->
+    <!-- 카톡이나 페북에 사이트 공유하면 이미지를 사이트 이름 설명 나오는 거임 -->
+    <meta property="og:image" content="/이미지경로.jpg">
+    <meta property="og:description" content="사이트설명">
+    <meta property="og:title" content="사이트제목">
+
+    <!-- 파비콘 넣는거임 -->
+    <link rel="shortcut icon" href="아이콘경로.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header-wrap">
+        <nav class="flex-container">
+            <div class="flex-item Logo">TITAN TOUR</div>
+            <div class="flex-item" style="flex-grow: 2;"></div>
+            <div class="flex-item menus">products</div>
+            <div class="flex-item menus">services</div>
+        </nav>
+    </div>
+
+    <div class="main-background">
+        <h4 class="main-title">Go To Nature!</h4>
+        <p class="main-content">
+            Come to <span style="color: gold">TITAN NATURE TOUR</span> and look
+            around the huge mauntains and river!
+        </p>
+        <button class="main-button">BUY TICKET -></button>
+    </div>
+
+    <div class="sub-box">
+        <h4>The way to find some Tour site!</h4>
+        <p class="pseudo">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+        </p>
+    </div>
+
+    <input type="file" class="input-file">
+    <input placeholder="안녕하세요">
+    <input type="range">
+    <progress value="0.5"></progress>
+
+    <div class="mybox">
+        <div class="mybox-inner">
+            <i class="fa-solid fa-cart-shopping fa-3x"></i>
+            <h4>Fast Shipping</h4>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="mybox-inner">
+            <i class="fa-solid fa-laptop fa-3x"></i>
+            <h4>Good Service</h4>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="mybox-inner">
+            <i class="fa-solid fa-ticket fa-3x"></i>
+            <h4>Free Coupons</h4>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="mybox-inner">
+            <i class="fa-solid fa-mountain-sun fa-3x"></i>
+            <h4>New products</h4>
+            <p>Lorem ipsum</p>
+        </div>
+    </div>
+
+    <div class="shop-bg">
+        <div class="shop-container">
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay">
+                        <div class="overlay-black">
+                            <span>$60</span>
+                        </div>
+                    </div>
+                    <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/16762/product/image_1636697430306_1000.jpg"
+                        alt="">
+                </div>
+
+            </div>
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay">
+                        <div class="overlay-black">
+                            <span>$25</span>
+                        </div>
+                    </div>
+                    <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/16762/product/image_1636697518799_1000.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay">
+                        <div class="overlay-black">
+                            <span>$43</span>
+                        </div>
+                    </div>
+                    <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/16762/product/image_1652434061826_1000.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <div class="form-box">
+            <div class="form-box-title">
+                <h3>Contact us</h3>
+            </div>
+            <div class="email-box">
+                <h4>Your Email</h4>
+                <input type="email" />
+            </div>
+            <div class="name-box">
+                <div class="first">
+                    <h4>First name</h4>
+                    <input type="text" />
+                </div>
+                <div class="last">
+                    <h4>Last name</h4>
+                    <input type="text" />
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="message-box" style="clear: both">
+                <h4>Message</h4>
+                <textarea name="" id="" cols="50" rows="5" style="width: 100%"></textarea>
+            </div>
+            <div class="check-box">
+                <input type="checkbox" />
+                <label for="checkbox">Subscribe</label>
+                <button type="submit" class="send">SEND</button>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </form>
+
+
+
+
+</body>
+
+</html>

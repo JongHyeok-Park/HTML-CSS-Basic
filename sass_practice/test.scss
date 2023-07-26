@@ -1,0 +1,78 @@
+@use 'reset';
+
+// .main-bg h4 {
+//     font-size: 16px;
+// }
+
+// .main-bg button {
+//     color: red;
+// }
+// 위에 형식을 아래와 같이 nesting 가능
+
+.main-bg {
+    width: 100px;
+
+    h4 {
+        font-size: 16px;
+    }
+
+    button {
+        color: red;
+    }
+}
+
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-red {
+    @extend %btn;
+    color: red;
+}
+
+.btn-green {
+    @extend %btn;
+    color: green;
+}
+
+.btn-blue {
+    @extend %btn;
+    color: blue;
+}
+
+%box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.box-red {
+    @extend %box;
+    background: red;
+}
+
+.box-green {
+    @extend %box;
+    background: green;
+}
+
+.box-blue {
+    @extend %box;
+    background: blue;
+}
+
+
+h2 {
+    @include reset.font-style(30px, 1px, width);
+    color: reset.$main-color;
+}
+
+h3 {
+    @include reset.font-style(20px, -1px, height);
+}
+
+h4 {
+    @include reset.font-style(10px, 3px, width);
+}

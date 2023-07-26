@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1340px;
+    margin: auto;
+    padding: 5px;
+}
+
+ul {
+    li {
+        list-style: none;
+        border: 1px solid #eee;
+        border-bottom: none;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .active {
+        background-color: skyblue;
+        color: white;
+    }
+}
+
+%alert {
+    border-radius: 10px;
+    padding: 1px 20px;
+    margin: 20px;
+}
+
+.green-alert {
+    @extend %alert;
+    color: green;
+    background-color: lightgreen;
+}
+
+.blue-alert {
+    @extend %alert;
+    color: blue;
+    background-color: lightblue;
+}
+
+.yellow-alert {
+    @extend %alert;
+    color: yellow;
+    background-color: lightyellow;
+}
+
+@mixin column($ratio) {
+    width: (100% * calc($ratio / 12));
+    float: left;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+
+.row {
+    width: 100%;
+    margin: 10px;
+
+    .col-6 {
+        @include column(6);
+    }
+
+    .col-4 {
+        @include column(4);
+    }
+
+    .col-3 {
+        @include column(3);
+    }
+}
+
+.row::after {
+    clear: both;
+}
