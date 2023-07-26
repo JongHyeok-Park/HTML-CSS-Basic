@@ -222,6 +222,7 @@ textarea {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .mybox::after {
     content: "";
     display: block;
@@ -229,6 +230,8 @@ textarea {
     float: none;
 }
 
+=======
+>>>>>>> 43d818d (first commit)
 .mybox-inner {
     float: left;
     width: 25%;
@@ -287,6 +290,7 @@ textarea {
     transition: all 0.8s;
 }
 
+<<<<<<< HEAD
 .pseudo::before {
     content: '안녕';
     color: red;
@@ -315,6 +319,8 @@ progress::-webkit-progress-value {
 :: 는 Pseudo-element (내부의 일부분만 스타일을 줌)
 */
 
+=======
+>>>>>>> 43d818d (first commit)
 .overlay:hover .overlay-black {
     margin-top: 50%;
     height: 50%;
